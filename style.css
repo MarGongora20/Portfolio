@@ -44,7 +44,7 @@ nav a:hover::after{
 
 /* Construccion de pagina*/
 body{
-    background-color: rgb(254, 255, 231);
+    background-color: #E8DFF4;
 }
 header{
     margin-top: 100px;
@@ -59,7 +59,7 @@ header{
     border-radius: 80px;
 }
 button{
-    color: #DB3E8D;
+    color: #911d57;
     font-family: "Comic Relief", system-ui;
     font-size: 20px;
     width: 200px;
@@ -68,13 +68,60 @@ button{
     border-color: #DB3E8D;
     background-color: #FFAFEC;
 }
+#skills{
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    color: #F5C35C;
+    background-color: #2D1B4E;    
+}
+.skills-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.card {
+    width: 120px;
+    height: 120px;
+    margin-top: 50px;
+    background-color: #3d246d;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+.card p {
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0;
+}
+
 /* Texto */
 h1{
     font-family: "DynaPuff", system-ui;
     font-size: 60px;
+    color: #911d57;
 }
 h2{
     font-family: "Comic Relief", system-ui;
+    font-size: 30px;
 }
 h4{
     font-family: "Comic Relief", system-ui;
