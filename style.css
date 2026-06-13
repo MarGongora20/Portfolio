@@ -1,0 +1,87 @@
+/* Navbar */
+nav{
+    padding: 20px;
+    font-family: "Comic Relief", system-ui;
+    background-color: #7759a3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav ul{
+    font-family: "Comic Relief", system-ui;
+    justify-content: center;
+    gap: 100px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    
+    position: relative;
+    display: inline-block;
+    transition: transform 0.25s ease;
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: #DB3E8D;
+    transform: translateX(-50%);
+    transition: width 0.25s ease;
+}
+nav a:hover{
+    transform: scale(1.08);
+}
+nav a:hover::after{
+    width: 100%;
+}
+
+/* Construccion de pagina*/
+body{
+    background-color: rgb(254, 255, 231);
+}
+header{
+    margin-top: 100px;
+    margin-bottom: 70px;
+    text-align: center;
+    height: 600px;
+    image-resolution: initial;
+}
+#Foto{
+    width: 300px;
+    height: auto;
+    border-radius: 80px;
+}
+button{
+    color: #DB3E8D;
+    font-family: "Comic Relief", system-ui;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: #DB3E8D;
+    background-color: #FFAFEC;
+}
+/* Texto */
+h1{
+    font-family: "DynaPuff", system-ui;
+    font-size: 60px;
+}
+h2{
+    font-family: "Comic Relief", system-ui;
+}
+h4{
+    font-family: "Comic Relief", system-ui;
+}
+ul{
+    font-family: "Quicksand", sans-serif;
+}
+p{
+    font-family: "Quicksand", sans-serif;
+}
